@@ -2,7 +2,7 @@
 const Card = ({ selectedId, setSelectedId, question, answer, cardId }) => {
 
   const handleClick = (id) => {
-    setSelectedId(id);
+    setSelectedId(id !== selectedId ? id : null);
   }
 
   return (
